@@ -15,9 +15,7 @@ export default function NewCard(article) {
 	img.alt = article.alt || 'new img'
 
 	title.textContent = article.title
-	description.textContent = article.description || ''
 	source.textContent = article.source?.name || 'unknown'
-	date.textContent = new Date(article.publishedAt).toLocaleDateString()
 
 	element.addEventListener('click', () => {
 		window.router.navigate(`/article?=${encodeURIComponent(article.url)}`)

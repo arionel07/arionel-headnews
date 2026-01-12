@@ -3090,6 +3090,7 @@ __metadata:
     css-loader: "npm:^7.1.2"
     html-loader: "npm:^5.1.0"
     html-webpack-plugin: "npm:^5.6.5"
+    nodenv: "npm:^0.1.0"
     pnp-webpack-plugin: "npm:^1.7.0"
     style-loader: "npm:^4.0.0"
     webpack: "npm:^5.104.1"
@@ -3946,6 +3947,16 @@ __metadata:
   version: 2.0.27
   resolution: "node-releases@npm:2.0.27"
   checksum: 10c0/f1e6583b7833ea81880627748d28a3a7ff5703d5409328c216ae57befbced10ce2c991bea86434e8ec39003bd017f70481e2e5f8c1f7e0a7663241f81d6e00e2
+  languageName: node
+  linkType: hard
+
+"nodenv@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "nodenv@npm:0.1.0"
+  bin:
+    nodenv: ./bin/nenv
+  checksum: 10c0/35fb0f69d3d6d7128a8b98d3a8f86f3ea4fceca55ac5685df4ccfb7fca5ee630d37921bb5245c47718833fa5031e6ec4d5287423da30916c4a385404c887c30b
+  conditions: "!os=win32"
   languageName: node
   linkType: hard
 

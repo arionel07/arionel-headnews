@@ -6,40 +6,21 @@
 		<b>A</b>
 		<span>|H|N</span>
 	</a>
-	<nav class="nav">
-		<ul class="header__list">
-			<li class="header__item">
-				<a
-					href="/"
-					class="header__link home"
-				>
-					Home
-				</a>
-			</li>
-			<li class="header__item">
-				<a
-					href="/sport"
-					class="header__link sport"
-				>
-					Sport
-				</a>
-			</li>
-			<li class="header__item">
-				<a
-					href="/politic"
-					class="header__link politic"
-				>
-					Politic
-				</a>
-			</li>
-			<li class="header__item">
-				<a
-					href="/educatiob"
-					class="header__link education"
-				>
-					Education
-				</a>
-			</li>
-		</ul>
-	</nav>
+
+	<div class="home__categories">
+		<button
+			data-category="general"
+			class="active"
+		>
+			Hotest
+		</button>
+		<button data-category="sports">Sport</button>
+		<button data-category="politics">Politic</button>
+		<button data-category="education">Educ</button>
+	</div>
+	<input
+		class="header__search"
+		type="text"
+		placeholder="Search news..."
+	/>
 </header>

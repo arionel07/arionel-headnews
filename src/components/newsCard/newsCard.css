@@ -1,0 +1,21 @@
+.news-card {
+	background: #c9c9c9;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.news-card__image {
+}
+.news-card__content {
+}
+.news-card__source {
+	margin-right: 20px;
+	text-decoration: underline;
+}
+.news-card__date {
+}
+.news-card__title {
+}
+.news-card__description {
+}

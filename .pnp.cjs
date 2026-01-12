@@ -37,6 +37,7 @@ const RAW_RUNTIME_STATE =
           ["headnews", "workspace:."],\
           ["html-loader", "virtual:d35766dd3c6f802bdef6f2cd137f2cace3f4afbac031fd10b1e7f1859ee6b684c0c8d82b4d454d2672804b49532bfc0eae6e484f579439605e9a6f24cc8d2cbc#npm:5.1.0"],\
           ["html-webpack-plugin", "virtual:d35766dd3c6f802bdef6f2cd137f2cace3f4afbac031fd10b1e7f1859ee6b684c0c8d82b4d454d2672804b49532bfc0eae6e484f579439605e9a6f24cc8d2cbc#npm:5.6.5"],\
+          ["nodenv", "npm:0.1.0"],\
           ["pnp-webpack-plugin", "npm:1.7.0"],\
           ["style-loader", "virtual:d35766dd3c6f802bdef6f2cd137f2cace3f4afbac031fd10b1e7f1859ee6b684c0c8d82b4d454d2672804b49532bfc0eae6e484f579439605e9a6f24cc8d2cbc#npm:4.0.0"],\
           ["webpack", "virtual:d35766dd3c6f802bdef6f2cd137f2cace3f4afbac031fd10b1e7f1859ee6b684c0c8d82b4d454d2672804b49532bfc0eae6e484f579439605e9a6f24cc8d2cbc#npm:5.104.1"],\
@@ -4491,6 +4492,7 @@ const RAW_RUNTIME_STATE =
           ["headnews", "workspace:."],\
           ["html-loader", "virtual:d35766dd3c6f802bdef6f2cd137f2cace3f4afbac031fd10b1e7f1859ee6b684c0c8d82b4d454d2672804b49532bfc0eae6e484f579439605e9a6f24cc8d2cbc#npm:5.1.0"],\
           ["html-webpack-plugin", "virtual:d35766dd3c6f802bdef6f2cd137f2cace3f4afbac031fd10b1e7f1859ee6b684c0c8d82b4d454d2672804b49532bfc0eae6e484f579439605e9a6f24cc8d2cbc#npm:5.6.5"],\
+          ["nodenv", "npm:0.1.0"],\
           ["pnp-webpack-plugin", "npm:1.7.0"],\
           ["style-loader", "virtual:d35766dd3c6f802bdef6f2cd137f2cace3f4afbac031fd10b1e7f1859ee6b684c0c8d82b4d454d2672804b49532bfc0eae6e484f579439605e9a6f24cc8d2cbc#npm:4.0.0"],\
           ["webpack", "virtual:d35766dd3c6f802bdef6f2cd137f2cace3f4afbac031fd10b1e7f1859ee6b684c0c8d82b4d454d2672804b49532bfc0eae6e484f579439605e9a6f24cc8d2cbc#npm:5.104.1"],\
@@ -5474,6 +5476,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../.yarn/berry/cache/node-releases-npm-2.0.27-b2d1b8de4a-10c0.zip/node_modules/node-releases/",\
         "packageDependencies": [\
           ["node-releases", "npm:2.0.27"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["nodenv", [\
+      ["npm:0.1.0", {\
+        "packageLocation": "./.yarn/unplugged/nodenv-npm-0.1.0-45b078ae6b/node_modules/nodenv/",\
+        "packageDependencies": [\
+          ["nodenv", "npm:0.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
