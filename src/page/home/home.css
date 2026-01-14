@@ -1,3 +1,18 @@
-.home {
-	padding: 10px 40px;
+.home_content {
+	position: relative;
+}
+.home__title {
+	position: absolute;
+	top: 110px;
+	padding-left: 48px;
+}
+.error {
+	font-size: 24px;
+	font-weight: 600;
+}
+.news-list {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }

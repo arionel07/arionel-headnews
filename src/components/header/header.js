@@ -1,6 +1,7 @@
 import template from './header.html'
 import './header.css'
 import { navigate } from '../../router/navigate.js'
+import { debounce } from '../../utils/debounce.js'
 
 export default function Header({
 	onCategoryChange,
@@ -12,6 +13,7 @@ export default function Header({
 
 	const searchInput = wrapper.querySelector('.header__search')
 	const categoryButtons = wrapper.querySelectorAll('[data-category]')
+	const svg = wrapper.querySelector('.svg')
 
 	categoryButtons.forEach(btn => {
 		if (btn.dataset.route === defaultCategory) {
@@ -28,8 +30,35 @@ export default function Header({
 		})
 	})
 
+	const handleSearch = debounce(value => {
+		onSearch?.(value)
+	}, 400)
+
 	searchInput.addEventListener('input', e => {
-		onSearch?.(e.target.value)
+		const value = searchInput.value.trim()
+
+		if (value.length > 0) {
+			svg.classList.remove('hidden')
+			requestAnimationFrame(() => {
+				svg.classList.add('visible')
+			})
+		} else {
+			svg.classList.remove('visible')
+			setTimeout(() => {
+				svg.classList.add('hidden')
+			}, 250)
+		}
+
+		handleSearch(e.target.value)
+	})
+
+	svg.addEventListener('click', () => {
+		searchInput.value = ''
+		svg.classList.remove('visible')
+		setTimeout(() => {
+			svg.classList.add('hidden')
+		}, 250)
+		onSearch?.('')
 	})
 
 	return wrapper

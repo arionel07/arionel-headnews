@@ -42,3 +42,28 @@ button {
 .hidden {
 	display: none;
 }
+.header__input {
+	display: flex;
+	position: relative;
+}
+.svg {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	right: 10px;
+	top: 8px;
+	opacity: 0;
+	transform: scale(0.8);
+	transition: opacity 0.4s ease, transform 0.3s ease;
+	pointer-events: none;
+}
+.svg.hidden {
+	display: none;
+}
+
+.svg.visible {
+	opacity: 1;
+	transform: scale(1);
+	pointer-events: auto;
+	cursor: pointer;
+}

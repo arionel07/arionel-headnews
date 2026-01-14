@@ -1,6 +1,6 @@
 import { http } from './http.js'
 
-//const API_KEY = process.env.GNEWS_API_KEY
+const API_KEY = process.env.GNEWS_API_KEY
 
 export async function getTopHeadlines({
 	category = 'general',

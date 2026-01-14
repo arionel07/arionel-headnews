@@ -1,3 +1,4 @@
+import template from './home.html'
 import './home.css'
 import Header from '../../components/header/header.js'
 import { getTopHeadlines } from '../../api/gnews.service.js'
@@ -6,11 +7,14 @@ import Footer from '../../components/footer/footer.js'
 
 export default function Home() {
 	const wrapper = document.createElement('div')
+	wrapper.innerHTML = template
 
 	let state = {
 		category: 'general',
-		query: ''
+		query: '',
+		articles: []
 	}
+
 	const footerComponent = new Footer()
 	const header = new Header({
 		defaultCategory: state.category,
@@ -18,23 +22,47 @@ export default function Home() {
 			state.category = category
 			loadNews()
 		},
-		searchInput(query) {
+		onSearch(query) {
 			state.query = query
-			loadNews()
+			renderNews()
 		}
 	})
 
-	const content = document.createElement('div')
-	const newList = document.createElement('div')
+	const content = wrapper.querySelector('.home__content')
+	const newList = wrapper.querySelector('.news-list')
+	const loading = wrapper.querySelector('.loader')
+	const errorDiv = wrapper.querySelector('.error')
 
 	async function loadNews() {
-		newList.innerHTML = 'Loading...'
-		const articles = await getTopHeadlines(state)
+		loading.classList.remove('hidden')
 
+		try {
+			state.articles = await getTopHeadlines({ category: state.category })
+			renderNews()
+		} catch (error) {
+			errorDiv.textContent = `${error}`
+		} finally {
+			loading.classList.add('hidden')
+		}
+	}
+
+	function renderNews() {
 		newList.innerHTML = ''
+		const filtered = state.articles.filter(article => {
+			const q = state.query.toLowerCase()
+			return (
+				article.title.toLowerCase().includes(q) ||
+				article.source.name.toLowerCase().includes(q)
+			)
+		})
 
-		articles.forEach(article => {
-			newList.append(NewCard(article))
+		if (!filtered.length) {
+			newList.textContent = 'No news found'
+			return
+		}
+
+		filtered.forEach(article => {
+			newList.appendChild(NewCard(article))
 		})
 	}
 
