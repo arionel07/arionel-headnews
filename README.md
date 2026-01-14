@@ -11,6 +11,7 @@ demonstrates a component-based architecture without using frameworks.
 - Client-side routing (Home / 404)
 - Component-based structure (Vanilla JS)
 - Loader and error handling
+- sessionStorage
 
 ## 🛠 Tech Stack
 
