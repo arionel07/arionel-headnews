@@ -34,6 +34,7 @@ const RAW_RUNTIME_STATE =
           ["axios", "npm:1.13.2"],\
           ["babel-loader", "virtual:d35766dd3c6f802bdef6f2cd137f2cace3f4afbac031fd10b1e7f1859ee6b684c0c8d82b4d454d2672804b49532bfc0eae6e484f579439605e9a6f24cc8d2cbc#npm:10.0.0"],\
           ["css-loader", "virtual:d35766dd3c6f802bdef6f2cd137f2cace3f4afbac031fd10b1e7f1859ee6b684c0c8d82b4d454d2672804b49532bfc0eae6e484f579439605e9a6f24cc8d2cbc#npm:7.1.2"],\
+          ["dotenv", "npm:17.2.3"],\
           ["headnews", "workspace:."],\
           ["html-loader", "virtual:d35766dd3c6f802bdef6f2cd137f2cace3f4afbac031fd10b1e7f1859ee6b684c0c8d82b4d454d2672804b49532bfc0eae6e484f579439605e9a6f24cc8d2cbc#npm:5.1.0"],\
           ["html-webpack-plugin", "virtual:d35766dd3c6f802bdef6f2cd137f2cace3f4afbac031fd10b1e7f1859ee6b684c0c8d82b4d454d2672804b49532bfc0eae6e484f579439605e9a6f24cc8d2cbc#npm:5.6.5"],\
@@ -3795,6 +3796,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["dotenv", [\
+      ["npm:17.2.3", {\
+        "packageLocation": "../../../../.yarn/berry/cache/dotenv-npm-17.2.3-2f9ab93ea1-10c0.zip/node_modules/dotenv/",\
+        "packageDependencies": [\
+          ["dotenv", "npm:17.2.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["dunder-proto", [\
       ["npm:1.0.1", {\
         "packageLocation": "../../../../.yarn/berry/cache/dunder-proto-npm-1.0.1-90eb6829db-10c0.zip/node_modules/dunder-proto/",\
@@ -4489,6 +4499,7 @@ const RAW_RUNTIME_STATE =
           ["axios", "npm:1.13.2"],\
           ["babel-loader", "virtual:d35766dd3c6f802bdef6f2cd137f2cace3f4afbac031fd10b1e7f1859ee6b684c0c8d82b4d454d2672804b49532bfc0eae6e484f579439605e9a6f24cc8d2cbc#npm:10.0.0"],\
           ["css-loader", "virtual:d35766dd3c6f802bdef6f2cd137f2cace3f4afbac031fd10b1e7f1859ee6b684c0c8d82b4d454d2672804b49532bfc0eae6e484f579439605e9a6f24cc8d2cbc#npm:7.1.2"],\
+          ["dotenv", "npm:17.2.3"],\
           ["headnews", "workspace:."],\
           ["html-loader", "virtual:d35766dd3c6f802bdef6f2cd137f2cace3f4afbac031fd10b1e7f1859ee6b684c0c8d82b4d454d2672804b49532bfc0eae6e484f579439605e9a6f24cc8d2cbc#npm:5.1.0"],\
           ["html-webpack-plugin", "virtual:d35766dd3c6f802bdef6f2cd137f2cace3f4afbac031fd10b1e7f1859ee6b684c0c8d82b4d454d2672804b49532bfc0eae6e484f579439605e9a6f24cc8d2cbc#npm:5.6.5"],\

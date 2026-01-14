@@ -2,6 +2,7 @@ import './home.css'
 import Header from '../../components/header/header.js'
 import { getTopHeadlines } from '../../api/gnews.service.js'
 import NewCard from '../../components/newsCard/newsCard.js'
+import Footer from '../../components/footer/footer.js'
 
 export default function Home() {
 	const wrapper = document.createElement('div')
@@ -10,7 +11,7 @@ export default function Home() {
 		category: 'general',
 		query: ''
 	}
-
+	const footerComponent = new Footer()
 	const header = new Header({
 		defaultCategory: state.category,
 		onCategoryChange(category) {
@@ -38,7 +39,7 @@ export default function Home() {
 	}
 
 	content.appendChild(newList)
-	wrapper.append(header, content)
+	wrapper.append(header, content, footerComponent)
 
 	loadNews()
 

@@ -1,3 +1,20 @@
-h1 {
-	color: aqua;
+.notfound {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.notfound h1 {
+	font-weight: 400;
+	font-size: 72px;
+	margin-top: 250px;
+	color: black;
+}
+.notfound a {
+	color: rgb(125, 125, 125);
+	font-size: 32px;
+	text-decoration: none;
+}
+.notfound a:hover {
+	text-decoration: underline;
 }
